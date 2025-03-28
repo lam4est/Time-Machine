@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị thời gian</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="./src/index.css">
+</head>
+<body>
+    <h1>Hiển thị thời gian</h1>
+    <div class="card">
+        <div class="settings">
+            <label for="timeFormat">Chọn định dạng thời gian:</label>
+            <select id="timeFormat">
+                <option value="24h">24 giờ</option>
+                <option value="12h">12 giờ</option>
+            </select>
+            <div class="notification-toggle">
+                <input type="checkbox" id="notificationToggle" checked>
+                <label for="notificationToggle">Bật thông báo cục bộ</label>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="showTimeButton">Hiển thị thời gian</button>
+            <button id="shareButton">Chia sẻ thời gian</button>
+        </div>
+        <p id="result"></p>
+        <p id="greeting" class="greeting"></p>
+    </div>
+    <div class="card screenshot-card">
+        <div class="screenshot-controls">
+            <button id="screenshotButton">Chụp màn hình</button>
+            <button id="saveButton" disabled>Lưu</button>
+        </div>
+        <div id="screenshotContainer"></div>
+    </div>
+    <script type="module" src="./src/main.jsx"></script>
+</body>
+</html>

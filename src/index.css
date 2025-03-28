@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #a78bfa;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 20px;
+  width: 90%;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.settings {
+  margin-bottom: 20px;
+}
+
+.settings label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.settings select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.notification-toggle {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notification-toggle input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.notification-toggle label {
+  font-size: 14px;
+  color: #333;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  width: 200px;
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #6b48ff, #a78bfa); 
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #5a3de6, #8c6de6);
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.screenshot-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+#saveButton {
+  width: 80px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  background: #e65a5a;
+}
+
+#saveButton:hover {
+  background: #e65a5a;
+  transform: translateY(-3px);
+}
+
+#saveButton:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+  transform: none;
+  opacity: 0.7;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #fff;
+  background: #a78bfa;
+  padding: 15px 20px;
+  border-radius: 15px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.greeting {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.screenshot-card {
+  background: #ff6b6b;
+  color: #fff;
+}
+
+#screenshotContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
